@@ -7,16 +7,108 @@
     <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/dcit-web.appspot.com/o/a2main.css.css?alt=media&token=372ab3f9-ae18-4058-83ce-2253593a0555">
 
     <style>
-    
-      
+        body{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        #stories{
+            height: 90px;
+            width: 70%;
+            margin-top: -5px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #b5b5b5;
+            border-radius: 2px;
+            padding-left: 30px;
+        }
+
+        .user{
+            width: 18%;
+            display: inline-block;
+        }
+
+        .user p{
+            text-align: center;
+            margin: 0;
+            font-family: Lucida Sans Unicode;
+            font-weight: 100;
+            font-size: smaller;
+        }
+
+        nav{
+            display: inline-block;
+            color: white;
+            width: 100%;
+            height: 54px;
+            border-bottom: 1px solid thick #e5e5e5;
+        }
+
+        #logo{
+            height: 60px;
+            position: relative;
+            left: 150px;
+            top: 55px;
+        }
+
+        #searchbar{
+            height: 25px;
+            position: relative;
+            width: 30%;
+            margin-left: 35vw;
+            margin-right: 35vw;
+            color: black;
+            text-align: center;
+            border: solid #b5b5b5 1px;
+            border-radius: 3px;
+        } 
+
+        #actions{
+            height: 50px;
+            position: relative;
+            right: -1000px;
+            top: -50px;
+        }
+
+        .user image{
+            padding-top: 5px;
+            border-radius: 50%;
+            border: double 4px thick #b5b5b5;
+            width: 56px;
+            height: 56px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .post{
+            border: solid 1px #b5b5b5;
+            border-radius: 2px;
+            height: 60%;
+            width: 560px;
+            padding-left: 119px;
+            padding-right: 119px;
+            padding-top: 10px;
+        }
+
+        .post-header{
+            color: black;
+            height: 60px;
+            box-sizing: border-box;
+            width: inherit;
+            padding: 5px;
+            border-bottom: 1px solid #b5b5b5;
+        }
     </style>
 </head>
+
 <body>
     <nav>
-       
         <img id="logo" src="img/instagran.png" alt="instagran logo" >
     
-        <input type="text" placeholder="search"/>
+        <input id="searchbar" type="text" placeholder="search"/>
 
         <img id="actions" src="img/actions.png" alt="actions" >
     </nav>
